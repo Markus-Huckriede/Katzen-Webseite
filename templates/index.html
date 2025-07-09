@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Lustige Katzen</title>
+  <style>
+    body {
+      font-family: 'Comic Sans MS', cursive;
+      background-color: #fffbe6;
+      text-align: center;
+      padding: 2rem;
+    }
+    img {
+      max-width: 90%;
+      border-radius: 1rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .caption {
+      font-style: italic;
+      margin-top: 1rem;
+      color: #555;
+    }
+    a.button {
+      display: inline-block;
+      margin-top: 1.5rem;
+      padding: 1rem 2rem;
+      background-color: #ff69b4;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a.button:hover {
+      background-color: #ff1493;
+    }
+  </style>
+</head>
+<body>
+  <h1>😺 Lustige Katzenbilder 😺</h1>
+  <img src="{{ cat_url }}" alt="Katze des Tages">
+  <div class="caption">{{ caption }}</div>
+  <br>
+  <a href="{{ url_for('more_cats') }}" class="button">Mehr Katzen!</a>
+</body>
+</html>
